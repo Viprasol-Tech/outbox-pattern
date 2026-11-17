@@ -72,8 +72,8 @@ publisher = InMemoryPublisher()
 relay = Relay(store, publisher)
 result = relay.run_once()
 
-print(result.published_count)          # 1
-print(list(publisher.consumed))        # the distinct event id(s) the consumer kept
+print(result.published_count)  # 1
+print(list(publisher.consumed))  # the distinct event id(s) the consumer kept
 ```
 
 ## 🏗️ Architecture
